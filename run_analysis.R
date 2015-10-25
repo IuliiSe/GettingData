@@ -28,3 +28,5 @@ MergedTotal <- cbind(dtSubject, mergedData)
 
 setnames(mergedDataSubject, "V1", "subject")
 setnames(mergedDataActivity, "V1", "activityNum")
+
+write.table(MergedTotal, file = "tidyData.txt", row.name=FALSE)
